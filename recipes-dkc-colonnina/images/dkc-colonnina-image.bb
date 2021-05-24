@@ -12,11 +12,16 @@ python do_display_banner() {
 
 addtask display_banner before do_build
 
-DEPENDS = "microchip-headless-image"
+# python3 addon packages versions
+IMAGE_INSTALL_append = " python3-versions.inc"
+IMAGE_INSTALL_append += " python3-*.bb"
+IMAGE_INSTALL_append += " python3-djangorestframework"
+
+## DEPENDS = "microchip-headless-image"
 
 IMAGE_INSTALL_remove = " nodejs nodejs-npm greengrass"
 
-IMAGE_INSTALL_append  = " qtbase qtbase-tools qtbase-plugins"
+IMAGE_INSTALL_append  += " qtbase qtbase-tools qtbase-plugins"
 IMAGE_INSTALL_append += " libavahi-gobject avahi-daemon libavahi-common libavahi-core libavahi-client avahi-dnsconfd libavahi-glib avahi-autoipd avahi-utils"
 IMAGE_INSTALL_append += " qtscxml"
 
