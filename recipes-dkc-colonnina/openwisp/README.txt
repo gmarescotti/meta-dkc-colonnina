@@ -1,9 +1,8 @@
-# pipoe -y python3 --package openw
-isp-controller
+# /usr/local/bin/pipoe -y python3 --package openwisp-controller
+
+user@ccc0a0f35dbe:~/dunfell/meta-dkc-colonnina/recipes-dkc-colonnina/openwisp$ /usr/local/bin/pipoe -y python3 --package openwisp-controller
 Gathering info:
   openwisp-controller
-Failed to translate license: GPL3
-Please enter a valid license name: GPLv3
   | celery
   |-- pytz
   |-- billiard
@@ -15,7 +14,7 @@ Please enter a valid license name: GPLv3
   |-- click-repl
   |-- click-plugins
   |-- setuptools
-Failed to translate license:
+Urca Failed to translate license:
 Please enter a valid license name: MIT
   | django-flat-json-widget
   | django-loci
@@ -36,30 +35,17 @@ Please enter a valid license name: MIT
   |------ autobahn
   |-------- txaio
   |-------- cryptography
-  |---------- cffi
-  |------------ pycparser
   |-- django-leaflet
   |-- django
   |-- geopy
   |---- geographiclib
   |-- openwisp-utils
-  |--  [ERROR] Failed to gather openwisp-utils (
-django-filter (>=2.2.0<2.4.0) ; extra == 'rest'
-                       ^
-Parse error at line 1, column 23: expected EOF. trail: [versionspec]
-)
-  | django-model-utils
+  |---- django-model-utils
   | django-reversion
   | django-sortedm2m
   | django-taggit
   | django-x509
   |-- jsonfield
-  |-- openwisp-utils
-  |--  [ERROR] Failed to gather openwisp-utils (
-django-filter (>=2.2.0<2.4.0) ; extra == 'rest'
-                       ^
-Parse error at line 1, column 23: expected EOF. trail: [versionspec]
-)
   |-- pyopenssl
   |-- swapper
   | djangorestframework-gis
@@ -77,36 +63,20 @@ Parse error at line 1, column 23: expected EOF. trail: [versionspec]
   |---- django-extensions
   |---- django-organizations
   |---- django-phonenumber-field
-  |---- openwisp-utils
-  |----  [ERROR] Failed to gather openwisp-utils (
-django-filter (>=2.2.0<2.4.0) ; extra == 'rest'
-                       ^
-Parse error at line 1, column 23: expected EOF. trail: [versionspec]
-)
   |---- packaging
-Failed to translate license: BSD-2-Clause or Apache-2.0
+Urca Failed to translate license: BSD-2-Clause or Apache-2.0
 Please enter a valid license name: Apache-2.0
   |------ pyparsing
   |---- phonenumbers
-  |-- openwisp-utils
-  |--  [ERROR] Failed to gather openwisp-utils (
-django-filter (>=2.2.0<2.4.0) ; extra == 'rest'
-                       ^
-Parse error at line 1, column 23: expected EOF. trail: [versionspec]
-)
-  | openwisp-utils
-  |  [ERROR] Failed to gather openwisp-utils (
-django-filter (>=2.2.0<2.4.0) ; extra == 'rest'
-                       ^
-Parse error at line 1, column 23: expected EOF. trail: [versionspec]
-)
   | paramiko
   |-- bcrypt
   |-- pynacl
   | scp
+Urca Failed to translate license: LGPL-2.1-or-later
+Please enter a valid license name: LGPL-2.1
 Generating recipes:
   python3-openwisp-controller_0.8.4.bb
-  python3-celery_5.1.0.bb
+  python3-celery_5.1.2.bb
   python3-pytz_2021.1.bb
   python3-billiard_3.6.4.0.bb
   python3-kombu_5.1.0.bb
@@ -114,15 +84,15 @@ Generating recipes:
   python3-vine_5.0.0.bb
   python3-click_8.0.1.bb
   python3-click-didyoumean_0.0.3.bb
-  python3-click-repl_0.1.6.bb
+  python3-click-repl_0.2.0.bb
   python3-click-plugins_1.1.1.bb
   python3-setuptools_57.0.0.bb
   python3-django-flat-json-widget_0.1.2.bb
   python3-django-loci_0.4.2.bb
   python3-pillow_8.1.0.bb
   python3-channels_3.0.3.bb
-  python3-django_3.2.3.bb
-  python3-asgiref_3.3.4.bb
+  python3-django_3.2.4.bb
+  python3-asgiref_3.4.0.bb
   python3-sqlparse_0.4.1.bb
   python3-daphne_3.0.2.bb
   python3-twisted_21.2.0.bb
@@ -136,12 +106,11 @@ Generating recipes:
   python3-autobahn_21.3.1.bb
   python3-txaio_21.2.1.bb
   python3-cryptography_3.4.7.bb
-  python3-cffi_1.14.5.bb
-  python3-pycparser_2.20.bb
-  python3-django-leaflet_0.28.0.bb
-  python3-django_3.2.3.bb
+  python3-django-leaflet_0.28.1.bb
+  python3-django_3.2.4.bb
   python3-geopy_2.1.0.bb
-  python3-geographiclib_1.50.bb
+  python3-geographiclib_1.52.bb
+  python3-openwisp-utils_0.7.5.bb
   python3-django-model-utils_4.1.1.bb
   python3-django-reversion_3.0.9.bb
   python3-django-sortedm2m_3.0.2.bb
@@ -156,7 +125,7 @@ Generating recipes:
   python3-jinja2_3.0.1.bb
   python3-markupsafe_2.0.1.bb
   python3-jsonschema_3.2.0.bb
-  python3-pyrsistent_0.17.3.bb
+  python3-pyrsistent_0.18.0.bb
   python3-openwisp-notifications_0.3.bb
   python3-django-notifications-hq_1.6.0.bb
   python3-markdown_3.3.4.bb
@@ -164,14 +133,16 @@ Generating recipes:
   python3-django-allauth_0.44.0.bb
   python3-django-extensions_3.1.3.bb
   python3-django-organizations_2.0.0.bb
-  python3-django-phonenumber-field_5.1.0.bb
+  python3-django-phonenumber-field_5.2.0.bb
   python3-packaging_20.9.bb
   python3-pyparsing_2.4.7.bb
-  python3-phonenumbers_8.12.23.bb
+  python3-phonenumbers_8.12.26.bb
   python3-paramiko_2.7.2.bb
   python3-bcrypt_3.2.0.bb
   python3-pynacl_1.4.0.bb
-  python3-scp_0.13.3.bb
+  python3-scp_0.13.5.bb
 
 PREFERRED_VERSIONS are available in: ./python3-versions.inc
+user@ccc0a0f35dbe:~/dunfell/meta-dkc-colonnina/recipes-dkc-colonnina/openwisp$ ls
+
 
