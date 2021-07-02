@@ -5,6 +5,7 @@ AUTHOR = "S. Andrew Sheppard <andrew@wq.io>"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=d252c0f14f2950a0af8694701e0ba793"
 
+require python-setuptools-scm.inc
 inherit setuptools3
 
 SRC_URI = "https://files.pythonhosted.org/packages/f1/1d/6060584adde0c951a1c0de668fbb319eb17abb3f095ade1aff176143cb4f/swapper-1.1.2.post1.tar.gz"
@@ -13,7 +14,7 @@ SRC_URI[sha256sum] = "51651018fb027354dd27ff38d5eb47a225d3e642c99b04cff878ae65b1
 
 S = "${WORKDIR}/swapper-1.1.2.post1"
 
-DEPENDS += " "
-RDEPENDS_${PN} = ""
+DEPENDS += " python3-pip"
+RDEPENDS_${PN} = " "
 
 BBCLASSEXTEND = "native nativesdk"

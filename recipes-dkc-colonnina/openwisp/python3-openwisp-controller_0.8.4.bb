@@ -13,7 +13,7 @@ SRC_URI[sha256sum] = "f44a2b84d5f5d3fbdcb42fed8e4760c6d1dadd9bdf9a13aff3c98c2699
 
 S = "${WORKDIR}/openwisp-controller-0.8.4"
 
-DEPENDS += " "
-RDEPENDS_${PN} = "python3-celery python3-django-flat-json-widget python3-django-loci python3-django-model-utils python3-django-reversion python3-django-sortedm2m python3-django-taggit python3-django-x509 python3-django python3-djangorestframework-gis python3-netjsonconfig python3-openwisp-notifications python3-openwisp-users python3-openwisp-utils python3-paramiko python3-scp python3-swapper"
+DEPENDS += " python3-setuptools-scm python3-setuptools-native"
+RDEPENDS_${PN} = "python3-celery python3-django-flat-json-widget python3-django-loci python3-django-model-utils python3-django-reversion python3-django-sortedm2m python3-django-taggit python3-django-x509 python3-django python3-djangorestframework-gis python3-netjsonconfig python3-openwisp-notifications python3-openwisp-users python3-openwisp-utils python3-paramiko python3-scp python3-swapper python3-setuptools-scm"
 
 BBCLASSEXTEND = "native nativesdk"
