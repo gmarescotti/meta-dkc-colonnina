@@ -87,7 +87,7 @@ Generating recipes:
   python3-click-didyoumean_0.0.3.bb
   python3-click-repl_0.2.0.bb
   python3-click-plugins_1.1.1.bb
-  python3-setuptools_57.0.0.bb
+  python3-setuptools_45.2.0.bb
   python3-django-flat-json-widget_0.1.2.bb
   python3-django-loci_0.4.2.bb
   python3-pillow_8.1.0.bb
