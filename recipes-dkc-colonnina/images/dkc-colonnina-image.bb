@@ -13,6 +13,7 @@ python do_display_banner() {
 addtask display_banner before do_build
 
 # python3 addon packages versions
+IMAGE_INSTALL_append += " git-dev" # per aiohttp
 IMAGE_INSTALL_append = " python3-versions.inc"
 IMAGE_INSTALL_append += " python3-*.bb"
 IMAGE_INSTALL_append += " python3-djangorestframework"
