@@ -13,3 +13,5 @@ PREFERRED_VERSION_python3-cstruct = "1.8"
 PREFERRED_VERSION_python3-paho-mqtt = "1.5.1"
 PREFERRED_VERSION_python3-pyserial = "3.5"
 PREFERRED_VERSION_python3-ruamel-yaml = "0.17.16"
+PREFERRED_VERSION_python3-colorlog = "6.4.1"
+
