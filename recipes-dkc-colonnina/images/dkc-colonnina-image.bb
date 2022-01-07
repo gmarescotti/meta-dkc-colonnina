@@ -5,7 +5,7 @@ LICENSE = "MIT"
 python do_display_banner() {
     bb.plain("***********************************************");
     bb.plain("*                                             *");
-    bb.plain("*  Example recipe created by bitbake-layers   *");
+    bb.plain("*       RGM DKC WALLBOX PROJECT               *");
     bb.plain("*                                             *");
     bb.plain("***********************************************");
 }
