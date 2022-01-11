@@ -1,0 +1,7 @@
+PREFERRED_VERSION_python3-rgmuploader = "0.1.10"
+PREFERRED_VERSION_python3-python-can = "3.3.4"
+PREFERRED_VERSION_python3-ti = "0.1.2"
+PREFERRED_VERSION_python3-udsoncan = "1.8"
+PREFERRED_VERSION_python3-can-isotp = "1.5.1"
+PREFERRED_VERSION_python3-fstool = "0.1.8"
+PREFERRED_VERSION_python3-ccsbuilderconfigurator = "0.0.14"
