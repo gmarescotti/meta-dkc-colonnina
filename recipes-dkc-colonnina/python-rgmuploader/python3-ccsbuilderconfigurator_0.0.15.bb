@@ -7,8 +7,8 @@ LICENSE = "CLOSED"
 inherit setuptools3
 
 SRC_URI = "http://intranet.rgm.it/pip/ccsbuilderconfigurator/ccsbuilderconfigurator-0.0.15.tar.gz"
-SRC_URI[md5sum] = "48e5f1af2a45811566ad5e6b69e4c79d"
-SRC_URI[sha256sum] = "f6351515a2eb4834cbfa2d20e266b55b1714e2913f7829268f14dde34ea9ea7f"
+SRC_URI[md5sum] = "d7d018afc60f78426efdd07c424db7ed"
+SRC_URI[sha256sum] = "75c9bd9c8c74420f43bea6243888a85b27e4fcf5806735acd09d4ef8c6a2ee25"
 
 S = "${WORKDIR}/ccsbuilderconfigurator-0.0.15"
 
