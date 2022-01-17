@@ -8,7 +8,7 @@ SRC_URI = " file://DKC_COLONNINA.out.prck"
 python do_display_banner() {
     bb.plain("***********************************************");
     bb.plain("*                                             *");
-    bb.plain("*       RGM DKC WALLBOX PROJECT               *");
+    bb.plain("*              DSP PRCK PACKAGE               *");
     bb.plain("*                                             *");
     bb.plain("***********************************************");
 }
@@ -31,9 +31,23 @@ addtask display_banner before do_build
 do_install () {
 	install -d ${D}/opt/dsp_software
 	install -m 0644 ${WORKDIR}/DKC_COLONNINA.out.prck ${D}/opt/dsp_software/
+	install -m 0644 ${WORKDIR}/*.prck ${D}/opt/dsp_software/
 }
 
 
 # Path delle cartelle e dei file da installare nel pacchetto
 FILES_${PN} += "/opt/dsp_software/DKC_COLONNINA.out.prck"
 
+# ALLOW_EMPTY_{PN} = 1
+
+pkg_postinst_${PN}() {
+    # 1: upgrade software command!
+    /usr/bin/issue_command.sh 1
+    # if [ -z "$D" ]; then
+    #     if type systemd-tmpfiles >/dev/null; then
+    #         systemd-tmpfiles --create
+    #     elif [ -e ${sysconfdir}/init.d/populate-volatile.sh ]; then
+    #         ${sysconfdir}/init.d/populate-volatile.sh update
+    #     fi
+    # fi
+}
