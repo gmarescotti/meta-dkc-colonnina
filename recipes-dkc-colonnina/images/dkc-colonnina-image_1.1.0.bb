@@ -42,7 +42,7 @@ FILES_${PN} += "/opt/dsp_software/DKC_COLONNINA.out.prck"
 
 pkg_postinst_${PN}() {
     # 1: upgrade software command!
-    /var/www/localhost/html/cgi-bin/issue_command.py 1
+    /usr/bin/issue_command.py 1
     # if [ -z "$D" ]; then
     #     if type systemd-tmpfiles >/dev/null; then
     #         systemd-tmpfiles --create
