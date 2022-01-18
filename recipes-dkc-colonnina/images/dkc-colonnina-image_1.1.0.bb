@@ -17,9 +17,9 @@ addtask display_banner before do_build
 
 # python3 addon packages versions
 # per aiohttp
-IMAGE_INSTALL_append = " git-dev" 
-IMAGE_INSTALL_append += " python3-versions.inc"
-IMAGE_INSTALL_append += " python3-*.bb"
+# IMAGE_INSTALL_append = " git-dev" 
+# IMAGE_INSTALL_append += " python3-versions.inc"
+# IMAGE_INSTALL_append += " python3-*.bb"
 # IMAGE_INSTALL_append += " python3-djangorestframework"
 ## DEPENDS = "microchip-headless-image"
 # RDEPENDS_${PN} = " dsp-prck"
@@ -42,7 +42,7 @@ FILES_${PN} += "/opt/dsp_software/DKC_COLONNINA.out.prck"
 
 pkg_postinst_${PN}() {
     # 1: upgrade software command!
-    /usr/bin/issue_command.py 1
+    /usr/bin/issue_command 1
     # if [ -z "$D" ]; then
     #     if type systemd-tmpfiles >/dev/null; then
     #         systemd-tmpfiles --create
