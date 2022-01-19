@@ -16,4 +16,11 @@ S = "${WORKDIR}/serial-to-mqtt-0.0.5"
 
 DEPENDS += " "
 
+pkg_preinst_${PN}() {
+   /etc/init.d/mqttservice stop
+}
+
+pkg_postinst_${PN}() {
+   /etc/init.d/mqttservice start
+}
 
