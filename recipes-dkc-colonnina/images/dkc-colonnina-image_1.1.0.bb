@@ -36,13 +36,14 @@ do_install () {
 
 
 # Path delle cartelle e dei file da installare nel pacchetto
-FILES_${PN} += "/opt/dsp_software/DKC_COLONNINA.out.prck"
+PRCKFILE += "/opt/dsp_software/DKC_COLONNINA.out.prck"
+FILES_${PN} += "${PRCKFILE}"
 
 # ALLOW_EMPTY_{PN} = 1
 
 pkg_postinst_${PN}() {
     # 1: upgrade software command!
-    /usr/bin/issue_command 1
+    /usr/bin/issue_command 1 ${PRCKFILE}
     # if [ -z "$D" ]; then
     #     if type systemd-tmpfiles >/dev/null; then
     #         systemd-tmpfiles --create
