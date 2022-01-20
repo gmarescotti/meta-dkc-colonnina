@@ -9,8 +9,7 @@ inherit setuptools3
 SRC_URI = "http://intranet.rgm.it/pip/serial-to-mqtt/serial-to-mqtt-0.0.5.tar.gz"
 BB_STRICT_CHECKSUM = "0"
 
-# SRC_URI[md5sum] = "7f2a421954cb8fe718925dd55b3f6b91"
-# SRC_URI[sha256sum] = "d368508fffdf95da5cdccded38c94ee9da2154787a5833ce2e0d14a646c9b462"
+SRC_URI[sha256sum] = "4a61544e07746a3f40ecb91ff65cbeb11f9052a1d63654addecd610f17c632fc"
 
 S = "${WORKDIR}/serial-to-mqtt-0.0.5"
 
