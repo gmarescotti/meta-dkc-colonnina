@@ -41,7 +41,7 @@ FILES_${PN} += "${PRCKFILE}"
 
 # ALLOW_EMPTY_{PN} = 1
 
-pkg_postinst_${PN}() {
+pkg_postinst_ontarget_${PN}() {
     # 1: upgrade software command!
     /usr/bin/issue_command 1 ${PRCKFILE}
     # if [ -z "$D" ]; then
