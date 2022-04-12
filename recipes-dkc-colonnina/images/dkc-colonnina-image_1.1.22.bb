@@ -28,6 +28,8 @@ addtask display_banner before do_build
 # IMAGE_INSTALL_append += " libavahi-gobject avahi-daemon libavahi-common libavahi-core libavahi-client avahi-dnsconfd libavahi-glib avahi-autoipd avahi-utils"
 # IMAGE_INSTALL_append += " qtscxml"
 
+RDEPENDS_${PN} = " serial2mqtt"
+
 do_install () {
 	install -d ${D}/opt/dsp_software
 	install -m 0644 ${WORKDIR}/DKC_COLONNINA.out.prck ${D}/opt/dsp_software/
@@ -43,7 +45,13 @@ FILES_${PN} += "${PRCKFILE}"
 
 pkg_postinst_ontarget_${PN}() {
     # 1: upgrade software command!
-    /usr/bin/issue_command 1 ${PRCKFILE}
+    count=10
+    for i in $(seq $count); do
+        /usr/bin/issue_command 1 ${PRCKFILE}
+        if [ $? -eq 0 ]; then break; fi
+	sleep 1
+	echo "issue_command failed.... [retry $i/$count]"
+    done
     # if [ -z "$D" ]; then
     #     if type systemd-tmpfiles >/dev/null; then
     #         systemd-tmpfiles --create
