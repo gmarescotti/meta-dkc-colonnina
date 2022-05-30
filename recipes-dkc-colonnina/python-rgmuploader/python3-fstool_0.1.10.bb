@@ -6,11 +6,11 @@ LICENSE = "CLOSED"
 
 inherit setuptools3
 
-SRC_URI = "http://intranet.rgm.it/pip/fstool/fstool-0.1.9.tar.gz"
-SRC_URI[md5sum] = "a7c0ba8ef4d5dc82156cb30acc0e6307"
-SRC_URI[sha256sum] = "0578f3c8c05271885a1eeb5618ecb88102abeeda2f98eea6c17b41910dc93551"
+SRC_URI = "http://intranet.rgm.it/pip/fstool/fstool-0.1.10.tar.gz"
 
-S = "${WORKDIR}/fstool-0.1.9"
+SRC_URI[sha256sum] = "69ccd16185a1bd7c4120d627150c5d95f6330a62379051ce525019e0d882e3b2"
+
+S = "${WORKDIR}/fstool-0.1.10"
 
 DEPENDS += " "
 # RDEPENDS_${PN} += "python3-multidict python3-idna"
