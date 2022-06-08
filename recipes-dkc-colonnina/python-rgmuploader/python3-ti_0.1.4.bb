@@ -7,8 +7,7 @@ LICENSE = "CLOSED"
 inherit setuptools3
 
 SRC_URI = "http://intranet.rgm.it/pip/ti/ti-0.1.4.tar.gz"
-SRC_URI[md5sum] = "3dd5bce4a02de7bd01f591919ace906a"
-SRC_URI[sha256sum] = "ee4ecdae8b2fb621aee4afe6e4d90b3d9bf6e13970abd00f8d58a4bdf5304849"
+SRC_URI[sha256sum] = "271bbcc2c4b3270bb9985fbdf6650f16e7b4eee6c5dfa1e291c47998b4e610f3"
 
 S = "${WORKDIR}/ti-0.1.4"
 

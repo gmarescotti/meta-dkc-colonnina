@@ -7,8 +7,7 @@ LICENSE = "CLOSED"
 inherit setuptools3
 
 SRC_URI = "http://intranet.rgm.it/pip/udsoncan/udsoncan-1.8.tar.gz"
-SRC_URI[md5sum] = "b0f4b121064338a7ab2f886ea0983d19"
-SRC_URI[sha256sum] = "490578341aa0ca93d637775362d29b6f5629c64d8d5a792cd901353d8eecaea8"
+SRC_URI[sha256sum] = "6bb07045a2ce36cbc72619b5cf62d169d34d517703be63efe9bf5f17dffb24ff"
 
 S = "${WORKDIR}/udsoncan-1.8"
 
