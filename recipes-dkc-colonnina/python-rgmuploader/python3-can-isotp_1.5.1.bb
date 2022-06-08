@@ -7,8 +7,7 @@ LICENSE = "CLOSED"
 inherit setuptools3
 
 SRC_URI = "http://intranet.rgm.it/pip/can-isotp/can-isotp-1.5.1.tar.gz"
-SRC_URI[md5sum] = "7bc66e6968c783d5f320988412979703"
-SRC_URI[sha256sum] = "6474ca7b82ef2f5fc5b81f025a6694425663f53eab0fba0b4f97558e736cf44e"
+SRC_URI[sha256sum] = "adae9eddbf5f8066c9cf9115ed98079ac79cceea7eeb633ab175fbce7d7ba0e6"
 
 S = "${WORKDIR}/can-isotp-1.5.1"
 
