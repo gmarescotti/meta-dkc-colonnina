@@ -6,10 +6,10 @@ LICENSE = "CLOSED"
 
 inherit pypi setuptools3
 
-SRC_URI = "http://intranet.rgm.it/pip/rgmuploader/rgmuploader-0.1.17.tar.gz"
-SRC_URI[sha256sum] = "ebc17b3681e0b9f8e72112a98c2120a96e5dbd4f8de3b49f0f46ec69fbbcec4e"
+SRC_URI = "http://intranet.rgm.it/pip/rgmuploader/rgmuploader-0.1.18.tar.gz"
+SRC_URI[sha256sum] = "fe62ce116e89bdb322621467dd82401312d7be621b05df13f2f10700c9ab421b"
 
-S = "${WORKDIR}/rgmuploader-0.1.17"
+S = "${WORKDIR}/rgmuploader-0.1.18"
 
 RDEPENDS_${PN} += " python3-singleton-decorator"
 
