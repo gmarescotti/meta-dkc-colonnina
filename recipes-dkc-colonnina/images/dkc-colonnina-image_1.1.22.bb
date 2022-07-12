@@ -4,7 +4,7 @@ DESCRIPTION = "DKC colonnina project"
 LICENSE = "CLOSED"
 SRC_URI = " file://DKC_COLONNINA.out.prck"
 
-PR="r10"
+PR="r11"
 
 python do_display_banner() {
     bb.plain("***********************************************");
