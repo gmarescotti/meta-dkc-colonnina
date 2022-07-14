@@ -4,7 +4,7 @@ DESCRIPTION = "DKC colonnina project"
 LICENSE = "CLOSED"
 SRC_URI = " file://DKC_COLONNINA.out.prck"
 
-PR="r11"
+PR="r12"
 
 python do_display_banner() {
     bb.plain("***********************************************");
@@ -48,10 +48,10 @@ pkg_postinst_ontarget_${PN}() {
     # 1: upgrade software command!
     count=10
     for i in $(seq $count); do
-        /usr/bin/issue_command 1 ${PRCKFILE}
-        if [ $? -eq 0 ]; then break; fi
-	sleep 1
-	echo "issue_command failed.... [retry $i/$count]"
+        /usr/bin/issue_command 1 ${PRCKFILE} || true
+        # if [ $? -eq 0 ]; then break; fi
+	# sleep 1
+	# echo "issue_command failed.... [retry $i/$count]"
     done
     # if [ -z "$D" ]; then
     #     if type systemd-tmpfiles >/dev/null; then
