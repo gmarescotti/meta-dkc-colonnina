@@ -4,7 +4,7 @@ DESCRIPTION = "DKC colonnina project"
 LICENSE = "CLOSED"
 SRC_URI = " file://DKC_COLONNINA.out.prck"
 
-PR="r12"
+PR="r13"
 
 python do_display_banner() {
     bb.plain("***********************************************");
@@ -46,9 +46,9 @@ FILES_${PN} += "${PRCKFILE}"
 
 pkg_postinst_ontarget_${PN}() {
     # 1: upgrade software command!
-    count=10
+    count=2
     for i in $(seq $count); do
-        /usr/bin/issue_command 1 ${PRCKFILE} || true
+        /usr/bin/issue_command 1 ${PRCKFILE} > /dev/null 2>&1 || true
         # if [ $? -eq 0 ]; then break; fi
 	# sleep 1
 	# echo "issue_command failed.... [retry $i/$count]"
