@@ -2,8 +2,8 @@
 # should be launched:
 #    /data/print_snapshots.sh > snapshot_rdepends.inc
 RDEPENDS_${PN} += "wilc-websocket-demo (=1.0+git0+dccae5ea9b-r0)"
-RDEPENDS_${PN} += "wilc-demo-fs-overlay (=0.0.19-r18)"
-RDEPENDS_${PN} += "serial2mqtt (=1.0.25-r32)"
+RDEPENDS_${PN} += "wilc-demo-fs-overlay (=0.0.19-r19)"
+RDEPENDS_${PN} += "serial2mqtt (=1.0.25-r36)"
 RDEPENDS_${PN} += "python3-watchdog (=2.1.9-r0)"
 RDEPENDS_${PN} += "python3-tempita (=0.5.2-r0)"
 RDEPENDS_${PN} += "python3-sqlparse (=0.3.1-r0)"
@@ -28,7 +28,7 @@ RDEPENDS_${PN} += "ntpdate (=4.2.8p15-r0)"
 RDEPENDS_${PN} += "mariadb-setupdb (=10.4.17-r1)"
 RDEPENDS_${PN} += "mariadb-server (=10.4.17-r1)"
 RDEPENDS_${PN} += "mariadb-client (=10.4.17-r1)"
-RDEPENDS_${PN} += "init-ifupdown (=1.0-r22)"
+# skipped init-ifupdown_1.0-r23_cortexa5t2hf-neon-vfpv4.ipk
 RDEPENDS_${PN} += "ifplugd (=0.28-r5)"
-RDEPENDS_${PN} += "dkc-colonnina-image (=1.1.22-r20)"
+RDEPENDS_${PN} += "dkc-colonnina-image (=1.1.22-r21)"
 RDEPENDS_${PN} += "dhcp-server-config (=4.4.2-r1)"
