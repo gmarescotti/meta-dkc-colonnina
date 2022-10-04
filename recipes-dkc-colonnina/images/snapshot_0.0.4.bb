@@ -8,7 +8,7 @@ PR="r1"
 
 RDEPENDS_${PN} = "python3-pymysql nginx mariadb-server bash"
 
-include snapshot_rdepends.inc
+include snapshot_rdepends.inc snapshot_rdepends_rel.inc
 
 do_install_append_class-target () {
 	install -d ${D}/etc
