@@ -2,9 +2,9 @@ SUMMARY = "bitbake-layers recipe"
 DESCRIPTION = "DKC colonnina project"
 # LICENSE = "MIT"
 LICENSE = "CLOSED"
-SRC_URI = " file://DKC_COLONNINA.out.prck"
+SRC_URI = "file://DKC_COLONNINA.out.prck"
 
-PR="r21"
+PR="r28"
 
 python do_display_banner() {
     bb.plain("***********************************************");
@@ -15,19 +15,6 @@ python do_display_banner() {
 }
 
 addtask display_banner before do_build
-
-# python3 addon packages versions
-# per aiohttp
-# IMAGE_INSTALL_append = " git-dev" 
-# IMAGE_INSTALL_append += " python3-versions.inc"
-# IMAGE_INSTALL_append += " python3-*.bb"
-# IMAGE_INSTALL_append += " python3-djangorestframework"
-## DEPENDS = "microchip-headless-image"
-# RDEPENDS_${PN} = " dsp-prck"
-# IMAGE_INSTALL_remove = " nodejs nodejs-npm greengrass"
-# IMAGE_INSTALL_append += " qtbase qtbase-tools qtbase-plugins"
-# IMAGE_INSTALL_append += " libavahi-gobject avahi-daemon libavahi-common libavahi-core libavahi-client avahi-dnsconfd libavahi-glib avahi-autoipd avahi-utils"
-# IMAGE_INSTALL_append += " qtscxml"
 
 RDEPENDS_${PN} = " serial2mqtt"
 
