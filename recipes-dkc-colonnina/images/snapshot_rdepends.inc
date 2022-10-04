@@ -32,5 +32,5 @@ RDEPENDS_${PN} += "mariadb-server (=10.4.17-r1)"
 RDEPENDS_${PN} += "mariadb-client (=10.4.17-r1)"
 # skipped init-ifupdown_1.0-r23_cortexa5t2hf-neon-vfpv4.ipk
 RDEPENDS_${PN} += "ifplugd (=0.28-r5)"
-RDEPENDS_${PN} += "dkc-colonnina-image (=1.1.22-r28)"
+RDEPENDS_${PN} += "dkc-colonnina-image (=1.1.22-r29)"
 RDEPENDS_${PN} += "dhcp-server-config (=4.4.2-r1)"
