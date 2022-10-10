@@ -33,8 +33,9 @@ pkg_postinst_ontarget_${PN}() {
 	#               fi
 	#       fi
 	# fi
-	# DA TOGLIERE AL SUCCESSIVO R6
-	/etc/init.d/mqttservice restart >> /var/log/bugfix_upgrade003.log
-	# opkg install serial2mqtt >> /var/log/bugfix_upgrade003.log
+	# DA TOGLIERE AL SUCCESSIVO R6 (messo perche' serial2mqtt crasha mentre aggiorna se stesso)
+
+	# /etc/init.d/mqttservice restart >> /var/log/bugfix_upgrade003.log
+	(sleep 6; opkg install serial2mqtt >> /var/log/bugfix_upgrade003.log 2>&1 ) &
 }
 
