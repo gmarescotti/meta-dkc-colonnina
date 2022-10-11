@@ -4,13 +4,11 @@ DESCRIPTION = "DKC colonnina project"
 LICENSE = "CLOSED"
 SRC_URI = "file://DKC_COLONNINA.out.prck"
 
-PR="r28"
+PR="r30"
 
 python do_display_banner() {
     bb.plain("***********************************************");
-    bb.plain("*                                             *");
     bb.plain("*              DSP PRCK PACKAGE               *");
-    bb.plain("*                                             *");
     bb.plain("***********************************************");
 }
 
