@@ -4,7 +4,7 @@ HOMEPAGE = "http://gitlab.rgm5.it/generic/wallbox_snapshots.git"
 AUTHOR = "Giulio Marescotti <giulio.marescotti@rgm.it>"
 LICENSE = "CLOSED"
 
-PR="r2"
+PR="r3"
 
 RDEPENDS_${PN} = "python3-pymysql nginx mariadb-server bash"
 
