@@ -1,7 +1,7 @@
 SUMMARY = "track wallbox snapshot"
 DESCRIPTION = "track snapshot revisions base on main version"
 HOMEPAGE = "http://gitlab.rgm5.it/generic/wallbox_snapshots.git"
-AUTHOR = "Giulio Marescotti <giulio.marescotti@rgm.it>"
+AUTHOR = "Filippo Montano <filippo.montano@rgm.it>"
 LICENSE = "CLOSED"
 
 PR="r4"
